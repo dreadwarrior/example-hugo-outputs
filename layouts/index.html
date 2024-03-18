@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Example site</title>
+    </head>
+    <body>
+        {{ .Content }}
+
+        <ul>
+            <li><a href="/categories/foo">HTML list page of category "foo"</a></li>
+            <li><a href="/categories/foo/index.json">JSON list page of category "foo"</a> (expected to render "Page not found")</li>
+            <li><a href="/categories/bar">HTML list page of category "bar"</a></li>
+            <li><a href="/categories/bar/index.json">JSON list page of category "bar"</a> (expected to render a JSON representation)</li>
+        </ul>
+    </body>
+</html>

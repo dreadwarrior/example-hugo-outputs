@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Category list page</title>
+    </head>
+    <body>
+        <h1>Pages in category {{ .Data.Term }}</h1>
+
+        {{ range .Pages }}
+            {{ .Title }}
+        {{ end }}
+    </body>
+</html>
